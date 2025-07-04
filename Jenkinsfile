@@ -43,8 +43,12 @@ pipeline {
     post {
         // Bloco executado no final do pipeline.
         always {
-            echo "Pipeline finalizado."
-            cleanWs()
+            // A limpeza do workspace precisa de um agente para ser executada.
+            // Envolvemos o passo em um bloco 'node' para designar um.
+            node {
+                echo "Pipeline finalizado. Limpando o workspace..."
+                cleanWs()
+            }
         }
     }
 }
