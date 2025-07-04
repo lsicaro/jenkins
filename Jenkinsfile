@@ -36,9 +36,7 @@ pipeline {
     }
     
     post {
-        // Bloco executado no final do pipeline.
         always {
-            // Apenas uma mensagem de finalização.
             echo "Pipeline finalizado."
         }
     }
