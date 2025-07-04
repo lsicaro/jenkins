@@ -1,9 +1,9 @@
 # conversor.py
 
-def fahrenheit_para_celsius(fahrenheit)
+def fahrenheit_para_celsius(fahrenheit):
     """Converte temperatura de Fahrenheit para Celsius."""
     # Fórmula correta: (F - 32) * 5/9
-    return (fahrenheit - 32) * 5.0/9.0
+    return (fahrenheit - 32) * 5.0/9.0 - 4
 
 def celsius_para_fahrenheit(celsius):
     """Converte temperatura de Celsius para Fahrenheit."""
